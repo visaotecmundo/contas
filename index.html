@@ -1,246 +1,270 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139137003-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	<meta name="googlebot" content="noindex">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title></title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  gtag('config', 'UA-139137003-4');
+</script>
 
+  <meta name="googlebot" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<meta property="og:description" content=". " />
 
-	<style type="text/css">
-		.btn-danger{
-			width: 90%;
-			font-weight: 500;
-			font-size: 1.3em;
-			margin-bottom:10px;
-			background-color: #FF1000;
-		}
+  <style type="text/css">
 
-		@media (max-width: 430px){
-			.divs{
-				width: 90% !important;
-			}
-
-		} 
-
-		.header {
-		  padding: 10px 16px;
-		  background-color: #20B9FF;
-		  height: 10vh;
-		  width: 100%
-				}
-
-		.sticky {
-		  position: fixed;
-		  top: 0;
-		  width: 100%
-		}
-
-		.sticky + .content {
-  			padding-top: 102px;
-		}
+    .content-blockquote{border-left: 4px solid #C4170C;margin-top: calc(3% + .5vw);margin-bottom: calc(3% + .5vw);    font-size: 1.5rem !important;
+    text-align: left;
+    padding-left: 1rem;
+    line-height: 2rem;
+    font-weight: 600 !important;
+    letter-spacing: -.0625rem;}
+@media (min-width: 64rem){
+.content-blockquote {
+    font-size: 1.5rem !important  ;
+    line-height: 2.25rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+      font-weight: 500 !important;
+    
+}}
 
 
-		
-
-		.btn-primary:hover{
-			background-color: #2E3138;
-			border: none !important;
-		}
-
-		.btn-primary:focus{
-			background-color: #2E3138;
-			border: none !important;
-			box-shadow: none !important;
-		}
 
 
-		.btn-primary{
-			background-color: #2E3138;
-			border: none;
-		}
+    .btn-danger{
+      width: 90%;
+      font-weight: 500;
+      font-size: 1.2em;
+      margin-bottom:10px;
+      background-color: #FF1000;
+    }
 
-		.btn-primary:active{
-			background-color: #2E3138 !important;
-			border: none;
-			box-shadow: none !important;
-		}
+    .divs{
+        font-size: 1.2em;
+        color: #212529;
+        text-align: justify;
+      }
 
-	</style>
+    @media (max-width: 430px){
+      .divs{
+        width: 90% !important;
+      }
+
+    } 
+
+    .header {
+      padding: 5px 16px;
+      padding-bottom: 5px;
+      background-color: #20B9FF;
+      height: 10vh;
+      width: 100%
+        }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    .sticky + .content {
+        padding-top: 102px;
+    }
+
+
+    
+
+    .btn-primary:hover{
+      background-color: #2E3138;
+      border: none !important;
+    }
+
+    .btn-primary:focus{
+      background-color: #2E3138;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+
+    .btn-primary{
+      background-color: #2E3138;
+      border: none;
+    }
+
+    .btn-primary:active{
+      background-color: #2E3138 !important;
+      border: none;
+      box-shadow: none !important;
+    }
+
+  </style>
 
 </head>
 <body>
+  <div class="header" id="myHeader" style="">
+    <p style="text-align: center;color: white;font-size: 2em;padding-top: 5px;">LOTERIAS</p>
+  </div>
 
-	<div class="header" id="myHeader" style="">
+  <section>
+    <div class="container">
 
-		<p style="text-align: center;color: white;font-size: 2em;padding-top: 5px">LOTERIAS</p>
-	</div>
-<iframe src='https://ev.braip.com/pv/lip62r13/afivpll8l' style='width:0;height:0;border:0;padding:0;margin:0'></iframe>
-	<section>
-		<div class="container">
+      <script type="text/javascript">
+      
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
 
-			<script type="text/javascript">
-			
-			const zeroFill = n => {
-				return ('0' + n).slice(-2);
-			}
+      // Cria intervalo
+      const interval = setInterval(() => {
+        
+        const now = new Date();
 
-			// Cria intervalo
-			const interval = setInterval(() => {
-				
-				const now = new Date();
+        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+        const dataHora = zeroFill(now.getDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + "00";
 
-				// Formata a data conforme dd/mm/aaaa hh:ii:ss
-				const dataHora = zeroFill(now.getDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + "00";
+        const min = now.getMinutes();
 
-				const min = now.getMinutes();
-
-				// Exibe na tela usando a div#data-hora
-				document.getElementById('data-hora').innerHTML = dataHora;
-				document.getElementById('data-min').innerHTML = min;
-			}, 1000);
+        // Exibe na tela usando a div#data-hora
+        document.getElementById('data-hora').innerHTML = dataHora;
+        document.getElementById('data-min').innerHTML = min;
+      }, 1000);
 
 
-		</script>
+    </script>
 
 
 
-			<div class="mx-auto divs" style="width: 60%;border-bottom: 1px solid #E5E5E5">
-				<h1 style="margin-top: 20px;font-weight: bold">Será o Fim da LotoFácil no Brasil?</h1>
-			
-				<p style="font-size: 1.2em;color: #626568">
-					Justiça Libera Aplicativo Inteligente e Donos de Lotéricas Entram em Pânico!
-				</p>
+      <div class="mx-auto divs" style="width: 60%;border-bottom: 1px solid #E5E5E5">
+        <h1 style="margin-top: 20px;font-weight: 600;font-size: 1.7em">Engenheiro Desenvolve Inteligência Artificial Capaz de Garantir Salário Semanal na LotoFácil</h1>
+      
+        <p style="font-size: 1.2em;color: #626568">
+          Aplicativo Polêmico promete usar Tecnologia Israelense para Garantir 14 Pontos Por Semana na Loto e 15 Pontos ao menos 1x por Ano.
+        </p>
 
-				<p>São Paulo - SP</p>
-				<p>
-					<span id="data-hora">14/08/20 07:39AM</span> Atualizado há <span id="data-min">33</span> min
-				</p>
-			</div>
+        <p style="font-size: 0.9em">São Paulo - SP</p>
+        <p style="font-size: 0.8em">
+          <span id="data-hora">14/08/20 07:39AM</span> Atualizado há <span id="data-min">33</span> min
+        </p>
+      </div>
 
-			<div class="mx-auto divs" style="width: 60%;margin-top: 20px">
-				<p>O Engenheiro Brasileiro, Peter Cardoso, conhecido por viver de Loteria, acaba de ganhar carta branca na Justiça Israelense para promover, no Brasil, o seu polêmico <a href="https://ev.braip.com/campanhas/cpa/cam107v9">Aplicativo</a> que usa <strong>Inteligência Artificial</strong> para Garantir um <strong>Salário Semanal na LotoFácil.</strong>
-				</p>
+      <div class="mx-auto divs" style="width: 40%;margin-top: 20px">
+        <p>Peter Cardoso, conhecido por <span style="color:#A6130A;font-weight: 700">viver de loterias</span>, é um engenheiro brasileiro que está causando polêmica na Internet.</span>
+        </p>
 
-				<center><img src="Peter.jpg" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"></center>
+        <center><img src="Peter.jpg" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"><p class="content-media-description" style="font-size: 0.8em">  Peter Cardoso — Foto: Jonas Vieira/Arquivo Pessoal </p></img></center>
 
-				<p>
-					A Empresa do Oriente Médio ingressou na Justiça Israelense contra o seu ex-funcionário exigindo imediata retirada do mercado brasileiro de seu Aplicativo devido a quebra de patentes.
-				</p>
+        <p>
+          Após ter ocupado o cargo de Engenheiro de Sistemas em uma Startup Israelense de Tecnologia por 3 anos, o engenheiro retornou ao Brasil e alega ter conseguido desenvolver um Aplicativo para Celular capaz de encontrar padrões e <span style="color:#A6130A;font-weight: 700">brechas estatísticas</span> para garantir um <span style="color:#A6130A;font-weight: 700">salário semanal na Lotofácil</span>.
+        </p>
 
-				<p>
-					Peter foi acusado pela empresa de ter se apropriado de informações confidenciais no período em que exerceu a função de Engenheiro de Sistemas, entre 2014 e 2017 e estar fazendo uso irresponsável da Tecnologia ao disponibilizar a brasileiros um <strong>Aplicativo que usa Inteligência Artificial para Gerar Jogos Vencedores na LotoFácil.</strong>
+        <p>
+          Nossa equipe ficou curiosa com a promessa do engenheiro e foi atrás de provas.
+        </p>
 
-				</p>
+       
 
-				<center><img src="tribnal.png" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"></center>
-
-
-				<p style="font-size: 1.2em;color: black;font-weight: 500">
-					A notícia porém tem causado Desespero em Organizadores de Jogos de Loteria que temem pelo Fim da LotoFácil
-				</p>
-
-				<p>
-					Recentemente Peter disponibilizou <strong>300 licenças</strong> do seu aplicativo na internet, e desde então vem causando pânico entre Donos de Casas Lotéricas que pedem o endurecimento das Regras do Concurso da LotoFácil
-
-				</p>
-
-				<p>
-					“A gente fica preocupado né, quando começou a comparecer aqui um rapaz toda semana para resgatar os 14 pontos na Loto ficamos preocupados". Diz Jonas, Dono de uma Casa Lotérica do Interior de SP.
-
-				</p>
-
-				<p>
-					“Eu considero isto injusto com outros Jogadores. Tem gente usando este Aplicativo para se aproveitar da situação, vindo toda semana buscar o prêmio, como se fosse um salário semanal. Eu acho que esta farra precisa acabar, imagina se todo mundo começa a usar este aplicativo? Aí vai acabar com as Loterias. E o que vai ser da gente?” Completa Jonas.
-				</p>
-
-				<p>
-					Nossa redação consultou o advogado Airton Meirelles, especialista em Direito Internacional, sobre a legalidade do Aplicativo no Brasil:
-				</p>
-
-				<p>
-					“Estão se aproveitando de uma brecha estatística, não há o que se falar em ilegalidade. A Caixa precisa tornar mais rígida as regras dos Concursos para que esta brecha não seja mais possível de ser explorada” Afirma o advogado.
-				</p>
-
-				<p>
-					Até a data desta publicação, a venda das licenças do Aplicativo ainda não tinham se esgotado e o Aplicativo continua a causar repercussão na Internet enquanto surge cada vez mais pessoas alegando estar resgatando um salário semanal na Loto ao usar o Aplicativo Desenvolvido pelo Engenheiro.
-
-				</p>
-
-				<p>
-					E enquanto pessoas no Twitter criticavam o aplicativo, alguns homens tentavam a todo custo defender o Engenheiro:
-				</p>
-
-				<center><img src="tw.png" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"></center>
+        <center><img src="tribnal.png" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"><p class="content-media-description" style="font-size: 0.8em;text-align: center">  Peter Cardoso, participa de audiência em Israel. — Foto: Patrícia Costa/Arquivo Pessoal </p></img></center>
 
 
-				<p>
-					Assista o vídeo onde ele mostra o funcionamento do aplicativo que usa Inteligência Artificial para gerar os Jogos Prontos na Loto Fácil.
+        <p>
+          Em conversa com nossa equipe, o Engenheiro nos contou que já conseguiu o <span style="color:#A6130A;font-weight: 700">prêmio máximo de 15pts</span>, 3 vezes nos últimos 2 anos, e ainda nos alertou que sofre grande pressão das Loterias para <span style="color:#A6130A;font-weight: 700">retirar seu sistema</span> do ar, pois o número de ganhadores está aumentando de forma espantosa a cada vez que ele divulga <span style="color:#A6130A;font-weight: 700">novas licenças</span> do seu sistema através da internet!
+        </p>
 
-				</p>
+        <p>
+          Peter acabou de liberar as <span style="color:#A6130A;font-weight: 700">últimas 300 licenças</span> do aplicativo na internet, e disse que depois que estas se esgotarem, ele não pretende abrir nenhuma outra oportunidade para quem quiser garantir o seu <span style="color:#A6130A;font-weight: 700">salário semanal na Lotofácil.</span>
 
-				<p>
-					Você vai se surpreender com essa descoberta.
-				</p>
+        </p>
 
-				<center><a href="https://ev.braip.com/campanhas/cpa/cam107v9"><button type="button" class="btn btn-danger">Clique Aqui para VER o VÍDEO >>
+        
+
+
+        <p>
+          De acordo com o Engenheiro, se tiver muita gente <span style="color:#A6130A;font-weight: 700">ganhando todas as semanas,</span> os organizadores de concursos de loteria vão precisar tornar mais rígidas as regras dos Concursos, o que pode prejudicar a todos que já adquiriram o seu aplicativo inteligente.
+        </p>
+
+        <p>
+          Ficamos abismados quando Peter pegou o seu Celular e fez uma <span style="color:#A6130A;font-weight: 700">demonstração,</span> em tempo real, mostrando em detalhes o funcionamento da <span style="color:#A6130A;font-weight: 700">Inteligência Artificial</span> do seu Aplicativo para Garantir um <span style="color:#A6130A;font-weight: 700">Salário Semanal</span> na Loto. Não deixe de ver! Você vai se impressionar também!
+        </p>
+
+       
+
+        <center><img src="tw.png" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"><p class="content-media-description" style="font-size: 0.8em;text-align: center">Print Tweet Rafael Ulrich. — Foto: Twitter/Arquivo Pessoal</p><img></center>
+
+
+        <p>
+          Assista o vídeo onde ele mostra o funcionamento do aplicativo que usa Inteligência Artificial para gerar os <span style="color:#A6130A;font-weight: 700">Jogos Prontos na Loto Fácil.</span>
+
+        </p>
+
+        <p>
+          Você vai se surpreender com essa descoberta.
+        </p>
+
+        <center><a href="https://appsniper.club/167-2"><button type="button" class="btn btn-danger" >Clique Aqui para VER o VÍDEO >>
 </button></a></center>
 
-				<p>
-					Clique no botão acima para assistir o vídeo completo até o final. Aproveite pois Peter nos disse que não sabe até quando ficará disponível, devido à grande pressão que está sofrendo.
-				</p>
+        <p>
+          Clique no botão acima para assistir o vídeo completo até o final. Aproveite pois Peter nos disse que não sabe até quando ficará disponível, devido à grande pressão que está sofrendo.
+        </p>
 
-			</div>
-			
-		</div>
-	</section>
-	<section style="background-color: #2E3138;color: white;padding-top: 20px;padding-bottom: 20px">
-		<div class="container" style="text-align: center;">
-			<p style="text-align: center;">Usamos cookies para garantir a você a melhor experiência no nosso site. Se continuar navegando sem alterar as suas configurações, supomos que você aceita esta prática. Se desejar, você pode alterar as configurações de cookies a qualquer momento.</p>
-			<p>© 2019 Jornal Cidade</p>
-			<center >
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#politicas">
- 					 Políticas de Privacidade
-				</button>
-			</center>
-				
-			<center>
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#termos">
-  					Termos de Uso
-				</button>
-			</center>
-			<center>
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contato">
-  					Contato
-				</button>
-			</center>
-			
-		</div>
-	</section>
+      </div>
+      
+    </div>
+  </section>
+  <section style="background-color: #2E3138;color: white;padding-top: 20px;padding-bottom: 20px">
+    <div class="container" style="text-align: center;">
+      <p style="text-align: center;">Usamos cookies para garantir a você a melhor experiência no nosso site. Se continuar navegando sem alterar as suas configurações, supomos que você aceita esta prática. Se desejar, você pode alterar as configurações de cookies a qualquer momento.</p>
+      <p>© 2019 Jornal Cidade</p>
+      <center >
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#politicas">
+           Políticas de Privacidade
+        </button>
+      </center>
+        
+      <center>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#termos">
+            Termos de Uso
+        </button>
+      </center>
+      <center>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contato">
+            Contato
+        </button>
+      </center>
+      
+    </div>
+  </section>
 
 
-	<script type="text/javascript">
-		window.onscroll = function() {myFunction()};
+  <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
 
-		// Get the header
-		var header = document.getElementById("myHeader");
+    // Get the header
+    var header = document.getElementById("myHeader");
 
-		// Get the offset position of the navbar
-		var sticky = header.offsetTop;
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
 
-		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-		  if (window.pageYOffset > sticky) {
-		    header.classList.add("sticky");
-		  } else {
-		    header.classList.remove("sticky");
-		  }
-		}
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
 
-	</script>
+  </script>
 
 
 
@@ -309,10 +333,8 @@
 </div>
 
 
-
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
