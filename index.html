@@ -1,340 +1,94 @@
 
+    <!DOCTYPE html>
+    <html lang="pt-br" class="js-focus-visible" data-js-focus-visible="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Aperte em continuar</title>
+<link rel="shortcut icon" href="like.png">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f5f5f5;
+            }
+            .like {
+                width: 120px;
+                /*height: 234px;*/
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+            .flex{
+                text-align: center;
+                min-height: 85vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .copy,.alt {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.21px;
+                text-align: center;
+                color: #3a3a3a;
+            }
+            .alt {
+            	font-size: 18px;
+                font-weight: normal;
+            }
 
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139137003-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-139137003-4');
-</script>
-
-  <meta name="googlebot" content="noindex">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<meta property="og:description" content=". " />
-
-  <style type="text/css">
-
-    .content-blockquote{border-left: 4px solid #C4170C;margin-top: calc(3% + .5vw);margin-bottom: calc(3% + .5vw);    font-size: 1.5rem !important;
-    text-align: left;
-    padding-left: 1rem;
-    line-height: 2rem;
-    font-weight: 600 !important;
-    letter-spacing: -.0625rem;}
-@media (min-width: 64rem){
-.content-blockquote {
-    font-size: 1.5rem !important  ;
-    line-height: 2.25rem;
-    padding-left: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-  
-      font-weight: 500 !important;
-    
-}}
-
-
-
-
-    .btn-danger{
-      width: 90%;
-      font-weight: 500;
-      font-size: 1.2em;
-      margin-bottom:10px;
-      background-color: #FF1000;
-    }
-
-    .divs{
-        font-size: 1.2em;
-        color: #212529;
-        text-align: justify;
-      }
-
-    @media (max-width: 430px){
-      .divs{
-        width: 90% !important;
-      }
-
-    } 
-
-    .header {
-      padding: 5px 16px;
-      padding-bottom: 5px;
-      background-color: #20B9FF;
-      height: 10vh;
-      width: 100%
+            #redirect{
+                margin-top: 30px;
+                display: inline-block;
+                background-color: #2ECC71;
+                text-decoration: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.18;
+                letter-spacing: 1.25px;
+                text-align: center;
+                color: #ffffff;
+                padding: 15px 50px;
+                border-radius: 20px;
+                /*text-shadow: 0 5px 10px 2px rgba(0,0,0,0.3);*/
+                /*box-shadow: 0 5px 10px 2px rgba(0,0,0,0.3);*/
+                transition: all 0.1s ease-in-out;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+            }
+            #redirect:hover{
+                background-color: #27AE60;
+                box-shadow: 0 5px 5px 2px rgba(0,0,0,0.3);
+            }
+        </style>
+    </head>
+    <script>
+        function perfectLink() {
+            var path = location.pathname+location.search;
+            var perfectlink  = 'https://omestredaloto.github.io' + path;
+            return location.href = perfectlink;
         }
-
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%
-    }
-
-    .sticky + .content {
-        padding-top: 102px;
-    }
-
-
-    
-
-    .btn-primary:hover{
-      background-color: #2E3138;
-      border: none !important;
-    }
-
-    .btn-primary:focus{
-      background-color: #2E3138;
-      border: none !important;
-      box-shadow: none !important;
-    }
-
-
-    .btn-primary{
-      background-color: #2E3138;
-      border: none;
-    }
-
-    .btn-primary:active{
-      background-color: #2E3138 !important;
-      border: none;
-      box-shadow: none !important;
-    }
-
-  </style>
-
-</head>
-<body>
-  <div class="header" id="myHeader" style="">
-    <p style="text-align: center;color: white;font-size: 2em;padding-top: 5px;">LOTERIAS</p>
-  </div>
-
-  <section>
-    <div class="container">
-
-      <script type="text/javascript">
-      
-      const zeroFill = n => {
-        return ('0' + n).slice(-2);
-      }
-
-      // Cria intervalo
-      const interval = setInterval(() => {
-        
-        const now = new Date();
-
-        // Formata a data conforme dd/mm/aaaa hh:ii:ss
-        const dataHora = zeroFill(now.getDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + "00";
-
-        const min = now.getMinutes();
-
-        // Exibe na tela usando a div#data-hora
-        document.getElementById('data-hora').innerHTML = dataHora;
-        document.getElementById('data-min').innerHTML = min;
-      }, 1000);
-
-
     </script>
-
-
-
-      <div class="mx-auto divs" style="width: 60%;border-bottom: 1px solid #E5E5E5">
-        <h1 style="margin-top: 20px;font-weight: 600;font-size: 1.7em">Engenheiro Desenvolve Inteligência Artificial Capaz de Garantir Salário Semanal na LotoFácil</h1>
-      
-        <p style="font-size: 1.2em;color: #626568">
-          Aplicativo Polêmico promete usar Tecnologia Israelense para Garantir 14 Pontos Por Semana na Loto e 15 Pontos ao menos 1x por Ano.
-        </p>
-
-        <p style="font-size: 0.9em">São Paulo - SP</p>
-        <p style="font-size: 0.8em">
-          <span id="data-hora">14/08/20 07:39AM</span> Atualizado há <span id="data-min">33</span> min
-        </p>
-      </div>
-
-      <div class="mx-auto divs" style="width: 40%;margin-top: 20px">
-        <p>Peter Cardoso, conhecido por <span style="color:#A6130A;font-weight: 700">viver de loterias</span>, é um engenheiro brasileiro que está causando polêmica na Internet.</span>
-        </p>
-
-        <center><img src="Peter.jpg" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"><p class="content-media-description" style="font-size: 0.8em">  Peter Cardoso — Foto: Jonas Vieira/Arquivo Pessoal </p></img></center>
-
-        <p>
-          Após ter ocupado o cargo de Engenheiro de Sistemas em uma Startup Israelense de Tecnologia por 3 anos, o engenheiro retornou ao Brasil e alega ter conseguido desenvolver um Aplicativo para Celular capaz de encontrar padrões e <span style="color:#A6130A;font-weight: 700">brechas estatísticas</span> para garantir um <span style="color:#A6130A;font-weight: 700">salário semanal na Lotofácil</span>.
-        </p>
-
-        <p>
-          Nossa equipe ficou curiosa com a promessa do engenheiro e foi atrás de provas.
-        </p>
-
-       
-
-        <center><img src="tribnal.png" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"><p class="content-media-description" style="font-size: 0.8em;text-align: center">  Peter Cardoso, participa de audiência em Israel. — Foto: Patrícia Costa/Arquivo Pessoal </p></img></center>
-
-
-        <p>
-          Em conversa com nossa equipe, o Engenheiro nos contou que já conseguiu o <span style="color:#A6130A;font-weight: 700">prêmio máximo de 15pts</span>, 3 vezes nos últimos 2 anos, e ainda nos alertou que sofre grande pressão das Loterias para <span style="color:#A6130A;font-weight: 700">retirar seu sistema</span> do ar, pois o número de ganhadores está aumentando de forma espantosa a cada vez que ele divulga <span style="color:#A6130A;font-weight: 700">novas licenças</span> do seu sistema através da internet!
-        </p>
-
-        <p>
-          Peter acabou de liberar as <span style="color:#A6130A;font-weight: 700">últimas 300 licenças</span> do aplicativo na internet, e disse que depois que estas se esgotarem, ele não pretende abrir nenhuma outra oportunidade para quem quiser garantir o seu <span style="color:#A6130A;font-weight: 700">salário semanal na Lotofácil.</span>
-
-        </p>
-
-        
-
-
-        <p>
-          De acordo com o Engenheiro, se tiver muita gente <span style="color:#A6130A;font-weight: 700">ganhando todas as semanas,</span> os organizadores de concursos de loteria vão precisar tornar mais rígidas as regras dos Concursos, o que pode prejudicar a todos que já adquiriram o seu aplicativo inteligente.
-        </p>
-
-        <p>
-          Ficamos abismados quando Peter pegou o seu Celular e fez uma <span style="color:#A6130A;font-weight: 700">demonstração,</span> em tempo real, mostrando em detalhes o funcionamento da <span style="color:#A6130A;font-weight: 700">Inteligência Artificial</span> do seu Aplicativo para Garantir um <span style="color:#A6130A;font-weight: 700">Salário Semanal</span> na Loto. Não deixe de ver! Você vai se impressionar também!
-        </p>
-
-       
-
-        <center><img src="tw.png" class="img-fluid" style="max-height: 500px;margin-top: 10px;margin-bottom: 20px"><p class="content-media-description" style="font-size: 0.8em;text-align: center">Print Tweet Rafael Ulrich. — Foto: Twitter/Arquivo Pessoal</p><img></center>
-
-
-        <p>
-          Assista o vídeo onde ele mostra o funcionamento do aplicativo que usa Inteligência Artificial para gerar os <span style="color:#A6130A;font-weight: 700">Jogos Prontos na Loto Fácil.</span>
-
-        </p>
-
-        <p>
-          Você vai se surpreender com essa descoberta.
-        </p>
-
-        <center><a href="https://go.perfectpay.com.br/PPU38CKAHG5"><button type="button" class="btn btn-danger" >Clique Aqui para VER o VÍDEO >>
-</button></a></center>
-
-        <p>
-          Clique no botão acima para assistir o vídeo completo até o final. Aproveite pois Peter nos disse que não sabe até quando ficará disponível, devido à grande pressão que está sofrendo.
-        </p>
-
-      </div>
-      
+    <body class="vsc-initialized">
+    <div class="flex">
+        <div class="container">
+            <img src="like.png" class="like" alt="Like icon"  width='120' height='140'>
+            <p class="copy">
+                Tudo certo!
+            </p>
+            <p class="alt">
+                Clique no botão abaixo para ser redirecionado para página solicitada!
+            </p>
+            <a href="#" id="redirect" onclick='perfectLink()'>Continuar »</a>
+        </div>
     </div>
-  </section>
-  <section style="background-color: #2E3138;color: white;padding-top: 20px;padding-bottom: 20px">
-    <div class="container" style="text-align: center;">
-      <p style="text-align: center;">Usamos cookies para garantir a você a melhor experiência no nosso site. Se continuar navegando sem alterar as suas configurações, supomos que você aceita esta prática. Se desejar, você pode alterar as configurações de cookies a qualquer momento.</p>
-      <p>© 2019 Jornal Cidade</p>
-      <center >
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#politicas">
-           Políticas de Privacidade
-        </button>
-      </center>
-        
-      <center>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#termos">
-            Termos de Uso
-        </button>
-      </center>
-      <center>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contato">
-            Contato
-        </button>
-      </center>
-      
-    </div>
-  </section>
 
 
-  <script type="text/javascript">
-    window.onscroll = function() {myFunction()};
-
-    // Get the header
-    var header = document.getElementById("myHeader");
-
-    // Get the offset position of the navbar
-    var sticky = header.offsetTop;
-
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-
-  </script>
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="politicas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Políticas de Privacidade</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h2>Política Privacidade</h2>                    <p>A sua privacidade é importante para nós. É política do Jornal da Cidade respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a href=>Jornal da Cidade</a>, e outros sites que possuímos e operamos.</p>                    <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.                    </p>                    <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou                        modificação não autorizados.</p>                    <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>                    <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas <a href='https://politicaprivacidade.com' target='_BLANK'>políticas de privacidade</a>.                    </p>                    <p>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</p>                    <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</p>                    <h2>Política de Cookies Jornal da Cidade</h2>                    <h3>O que são cookies?</h3>                    <p>Como é prática comum em quase todos os sites profissionais, este site usa cookies, que são pequenos arquivos baixados no seu computador, para melhorar sua experiência. Esta página descreve quais informações eles coletam, como as usamos e por que às vezes                        precisamos armazenar esses cookies. Também compartilharemos como você pode impedir que esses cookies sejam armazenados, no entanto, isso pode fazer o downgrade ou 'quebrar' certos elementos da funcionalidade do site.</p>                    <h3>Como usamos os cookies?</h3>                    <p>Utilizamos cookies por vários motivos, detalhados abaixo. Infelizmente, na maioria dos casos, não existem opções padrão do setor para desativar os cookies sem desativar completamente a funcionalidade e os recursos que eles adicionam a este site. É recomendável                        que você deixe todos os cookies se não tiver certeza se precisa ou não deles, caso sejam usados ​​para fornecer um serviço que você usa.</p>                    <h3>Desativar cookies</h3>                    <p>Você pode impedir a configuração de cookies ajustando as configurações do seu navegador (consulte a Ajuda do navegador para saber como fazer isso). Esteja ciente de que a desativação de cookies afetará a funcionalidade deste e de muitos outros sites que                        você visita. A desativação de cookies geralmente resultará na desativação de determinadas funcionalidades e recursos deste site. Portanto, é recomendável que você não desative os cookies.</p>                    <h3>Cookies que definimos</h3>                    <ul>                        <li>                            Cookies relacionados à conta<br><br> Se você criar uma conta connosco, usaremos cookies para o gerenciamento do processo de inscrição e administração geral. Esses cookies geralmente serão excluídos quando você sair do sistema, porém, em alguns                            casos, eles poderão permanecer posteriormente para lembrar as preferências do seu site ao sair.<br><br>                        </li>                        <li>                            Cookies relacionados ao login<br><br> Utilizamos cookies quando você está logado, para que possamos lembrar dessa ação. Isso evita que você precise fazer login sempre que visitar uma nova página. Esses cookies são normalmente removidos ou limpos                            quando você efetua logout para garantir que você possa acessar apenas a recursos e áreas restritas ao efetuar login.<br><br>                        </li>                        <li>                            Cookies relacionados a boletins por e-mail<br><br> Este site oferece serviços de assinatura de boletim informativo ou e-mail e os cookies podem ser usados ​​para lembrar se você já está registrado e se deve mostrar determinadas notificações                            válidas apenas para usuários inscritos / não inscritos.<br><br>                        </li>                        <li>                            Pedidos processando cookies relacionados<br><br> Este site oferece facilidades de comércio eletrônico ou pagamento e alguns cookies são essenciais para garantir que seu pedido seja lembrado entre as páginas, para que possamos processá-lo adequadamente.<br><br>                        </li>                        <li>                            Cookies relacionados a pesquisas<br><br> Periodicamente, oferecemos pesquisas e questionários para fornecer informações interessantes, ferramentas úteis ou para entender nossa base de usuários com mais precisão. Essas pesquisas podem usar cookies                            para lembrar quem já participou numa pesquisa ou para fornecer resultados precisos após a alteração das páginas.<br><br>                        </li>                        <li>                            Cookies relacionados a formulários<br><br> Quando você envia dados por meio de um formulário como os encontrados nas páginas de contacto ou nos formulários de comentários, os cookies podem ser configurados para lembrar os detalhes do usuário                            para correspondência futura.<br><br>                        </li>                        <li>                            Cookies de preferências do site<br><br> Para proporcionar uma ótima experiência neste site, fornecemos a funcionalidade para definir suas preferências de como esse site é executado quando você o usa. Para lembrar suas preferências, precisamos                            definir cookies para que essas informações possam ser chamadas sempre que você interagir com uma página for afetada por suas preferências.<br>                        </li>                    </ul>                    <h3>Cookies de Terceiros</h3>                    <p>Em alguns casos especiais, também usamos cookies fornecidos por terceiros confiáveis. A seção a seguir detalha quais cookies de terceiros você pode encontrar através deste site.</p>                    <ul>                        <li>                            Este site usa o Google Analytics, que é uma das soluções de análise mais difundidas e confiáveis ​​da Web, para nos ajudar a entender como você usa o site e como podemos melhorar sua experiência. Esses cookies podem rastrear itens como quanto tempo                            você gasta no site e as páginas visitadas, para que possamos continuar produzindo conteúdo atraente.                        </li>                    </ul>                    <p>Para mais informações sobre cookies do Google Analytics, consulte a página oficial do Google Analytics.</p>                    <ul>                        <li>                            As análises de terceiros são usadas para rastrear e medir o uso deste site, para que possamos continuar produzindo conteúdo atrativo. Esses cookies podem rastrear itens como o tempo que você passa no site ou as páginas visitadas, o que nos ajuda a entender                            como podemos melhorar o site para você.</li>                        <li>                            Periodicamente, testamos novos recursos e fazemos alterações subtis na maneira como o site se apresenta. Quando ainda estamos testando novos recursos, esses cookies podem ser usados ​​para garantir que você receba uma experiência consistente enquanto                            estiver no site, enquanto entendemos quais otimizações os nossos usuários mais apreciam.</li>                        <li>                            À medida que vendemos produtos, é importante entendermos as estatísticas sobre quantos visitantes de nosso site realmente compram e, portanto, esse é o tipo de dados que esses cookies rastrearão. Isso é importante para você, pois significa que podemos                            fazer previsões de negócios com precisão que nos permitem analizar nossos custos de publicidade e produtos para garantir o melhor preço possível.</li>                                            </ul><h3>Mais informações</h3>                    <p>Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.</p>                    <p>Esta política é efetiva a partir de <strong>August</strong>/<strong>2020</strong>.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="termos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Termos de Uso</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h2>1. Termos</h2>            <p>Ao acessar ao site <a href=''>Jornal da Cidade</a>, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis ​​e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum                desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.</p>            <h2>2. Uso de Licença</h2>            <p>É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Jornal da Cidade , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e,                sob esta licença, você não pode: </p>            <ol>            <li>modificar ou copiar os materiais;  </li>            <li>usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);  </li>            <li>tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Jornal da Cidade;  </li>            <li>remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou  </li>            <li>transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.</li>            </ol>            <p>Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Jornal da Cidade a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais                baixados em sua posse, seja em formato eletrónico ou impresso.</p>            <h2>3. Isenção de responsabilidade</h2>            <ol>            <li>Os materiais no site da Jornal da Cidade são fornecidos 'como estão'. Jornal da Cidade não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização,            adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos. </li>            <li>Além disso, o Jornal da Cidade não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis ​​ou à confiabilidade do uso dos            materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.</li>            </ol>            <h2>4. Limitações</h2>            <p>Em nenhum caso o Jornal da Cidade ou seus fornecedores serão responsáveis ​​por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em Jornal da Cidade,                mesmo que Jornal da Cidade ou um representante autorizado da Jornal da Cidade tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade                por danos conseqüentes ou incidentais, essas limitações podem não se aplicar a você.</p>            <h3>Precisão dos materiais</h3>            <p>Os materiais exibidos no site da Jornal da Cidade podem incluir erros técnicos, tipográficos ou fotográficos. Jornal da Cidade não garante que qualquer material em seu site seja preciso, completo ou atual. Jornal da Cidade pode fazer alterações nos materiais contidos em seu                site a qualquer momento, sem aviso prévio. No entanto, Jornal da Cidade não se compromete a atualizar os materiais.</p>            <h2>6. Links</h2>            <p>O Jornal da Cidade não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por Jornal da Cidade do site. O uso de qualquer site vinculado é por conta e risco do usuário.</p>            </p>            <h3>Modificações</h3>            <p>O Jornal da Cidade pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.</p>            <h3>Lei aplicável</h3>            <p>Estes termos e condições são regidos e interpretados de acordo com as leis do Jornal da Cidade e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-</html>
+    </body></html>
